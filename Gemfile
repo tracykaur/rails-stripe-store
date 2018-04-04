@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.6'
 gem 'devise'
 gem 'bootstrap', '~> 4.0.0'
+gem 'stripe'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

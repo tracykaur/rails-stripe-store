@@ -14,12 +14,12 @@ ActiveRecord::Schema.define(version: 20180404114819) do
 
   create_table "rentals", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "videos_id"
+    t.integer "video_id"
     t.string "charge_identifier"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_rentals_on_user_id"
-    t.index ["videos_id"], name: "index_rentals_on_videos_id"
+    t.index ["video_id"], name: "index_rentals_on_video_id"
   end
 
   create_table "users", force: :cascade do |t|
