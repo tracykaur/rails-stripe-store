@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title year released:</strong>
+  <%= @video.title_year_released %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @video.description %>
+</p>
+
+<p>
+  <strong>Classification:</strong>
+  <%= @video.classification %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @video.genre %>
+</p>
+
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
